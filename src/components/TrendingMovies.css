@@ -1,0 +1,26 @@
+.trending ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  list-style-type: none;
+  padding: 2rem;
+}
+.trending-div {
+  width: 130px;
+}
+
+@media screen and (max-width: 900px) {
+  .trending ul {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .trending-div {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .trending ul {
+    overflow-x: scroll;
+    grid-template-columns: repeat(20, 1fr);
+  }
+}

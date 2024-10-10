@@ -1,0 +1,42 @@
+.w-li img {
+  width: 12rem;
+  height: 10rem;
+}
+
+.w-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+  background-color: #2c343f;
+}
+.w-ul {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+.watch-section .m-home-nav {
+  display: none;
+}
+.w-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.watch-section .movies-nav h1 {
+  display: block;
+}
+@media screen and (max-width: 750px) {
+  .w-li {
+    width: 90vw;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .watch-section .m-home-nav {
+    display: block;
+  }
+  .watch-section .m-home-nav h1 {
+    display: block;
+  }
+}

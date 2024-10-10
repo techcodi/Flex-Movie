@@ -1,0 +1,116 @@
+.movies-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #b30000;
+}
+.movies-nav h1 {
+  font-size: 3rem;
+}
+.movies-nav input {
+  outline: none;
+  width: 30%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff3333;
+  color: #fff;
+  font-weight: 600;
+}
+.movies-nav p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.movies-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movies-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-content: center;
+  padding: 2rem 4rem;
+  row-gap: 3rem;
+  color: #fff;
+}
+.movies-list li img {
+  height: 20rem;
+  width: 15rem;
+  border-radius: 5px;
+}
+.error {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.s-section .m-home-nav {
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  .movies-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .movies-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .movies-list li img {
+    height: 15rem;
+    width: 10rem;
+    border-radius: 5px;
+  }
+  .movies-list li img {
+    height: 20rem;
+    width: 13rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .movies-nav h1 {
+    display: none;
+  }
+  .movies-nav {
+    padding: 1rem;
+  }
+  .movies-nav p {
+    display: none;
+  }
+  .movies-nav a {
+    display: none;
+  }
+  .movies-nav input {
+    width: 100%;
+    color: #fff;
+  }
+  .movies-nav input:placeholder-shown {
+    color: #fff;
+  }
+  .s-section .m-home-nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 550px) {
+  .movies-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .movies-list li img {
+    height: 20rem;
+    width: 15rem;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .movies-list li img {
+    height: 19rem;
+    width: 13rem;
+    border-radius: 5px;
+  }
+  .movies-list {
+    padding: 4rem 4rem;
+  }
+}

@@ -1,0 +1,52 @@
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/public/tyson-moultrie-BQTHOGNHo08-unsplash.jpg");
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  padding: 4rem;
+}
+.home_con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b30000;
+  height: 80vh;
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  gap: 2rem;
+}
+h1 {
+  font-size: 4rem;
+  float: center;
+}
+.home-a {
+  background-color: #111111;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+.home_center p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2.7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .home_con h1 {
+    font-size: 2.5rem;
+  }
+  .home_con h2 {
+    font-size: 2rem;
+  }
+  .home_con {
+    padding: 2rem;
+    width: 93vw;
+  }
+  .home {
+    padding: 4rem 1rem;
+  }
+}
