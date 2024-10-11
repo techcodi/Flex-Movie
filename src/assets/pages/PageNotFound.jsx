@@ -7,7 +7,7 @@ function PageNotFound() {
       style={{ display: "flex", justifyContents: "center", marginTop: "3rem" }}
     >
       <div>
-        <h1>Error Kindly go back</h1>
+        <h1>⛔Error Kindly go back</h1>
         <button onClick={() => navigate(-2)}>Go back </button>
       </div>
     </div>

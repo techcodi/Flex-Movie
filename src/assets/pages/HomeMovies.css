@@ -30,16 +30,17 @@
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 950px) {
-  html {
-    font-size: 70%;
-  }
+/* @media screen and (max-width: 950px) {
+  
   .m-home {
     display: grid;
     grid-template-columns: 15rem 80rem;
   }
-}
-@media screen and (max-width: 630px) {
+} */
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 70%;
+  }
   .m-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
