@@ -38,7 +38,7 @@ function MoviesProvider({ children }) {
         try {
           setIsLoading(true);
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${SearchKey}&s=${movie}`
+            `https://www.omdbapi.com/?apikey=${SearchKey}&s=${movie}`
           );
           if (!res.ok) throw new Error("Something went wrong");
           const data = await res.json();
@@ -67,7 +67,7 @@ function MoviesProvider({ children }) {
   async function getMovie(id) {
     try {
       const res = await fetch(
-        `http://www.omdbapi.com/?apikey=${SearchKey}&i=${id}`
+        `https://www.omdbapi.com/?apikey=${SearchKey}&i=${id}`
       );
       if (!res.ok) throw new Error("Something went wrong");
       const data = await res.json();
